@@ -30,13 +30,13 @@ const Signin = () => {
   };
 
   return (
-    <div style={{height: "100vh"}} className="bg-dark">
+    <div style={{height: "100vh"}} className="header">
       <h3 className="text-center text-light">Enter your info:</h3>
       {failedLogin ? (<h3 className="text-center text-danger">FAILED LOGIN</h3>) : (<></>)}
       <form className="mt-5 d-flex justify-content-center align-items-center" onSubmit={(e) => handleSignin(e)}>
-        <input type="text" placeholder="User Name" required/>
-        <input type="password" placeholder="Password" required/>
-        <input type="submit"/>
+        <input className="input" type="text" placeholder="User Name" required/>
+        <input className="input" type="password" placeholder="Password" required/>
+        <input className="input" type="submit"/>
       </form>
     </div>
   )
